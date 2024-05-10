@@ -6,7 +6,7 @@ This repository demonstrates how to make use of the MVS provided API: WTO by cod
 
 2. The Descriptor code of **WTOPARM.asm** is '2', which means the program should be compiled and link-edited into an APF (Authorized Program Facility) enabled PDS/PDSE (Partitioned Data Set / Partitioned Data Set Extended) with AC code equal to '1'.
 
-3. The maximum length of the parameter that **WTOPARM.asm** can accept is 100. Leave the column 72 of the first line as blank and continue from the 16th column of the second line to specify the remaining argument to be displayed.
+3. The maximum length of the parameter that **WTOPARM.asm** can accept is 100. Leave the column 72 of the first line as blank and **continue from the *16th* column of the second line** to specify the remaining argument to be displayed.
 
 4. Sample JCL for executing **WTOPARM LMD** is as follows: * Please note that WTOPARM LMD must be put into an APF library in the Link List concatenation -- using 'D PROG,APF' and 'D PROG,LNKLST' to ensure and 'F LLA,REFHRESH' to take effect * 
 
