@@ -19,25 +19,25 @@ This repository demonstrates how to make use of the MVS provided API: WTO by cod
 
 	//WTOPARM EXEC PGM=WTOPARM,
 
-	// PARM='01234567891123456789212345678931234567894123456789512345678961 
-        
+	// PARM='01234567891123456789212345678931234567894123456789512345678961
+
         //            23456789712345678981234567899123456789'
 
 	**************************** Bottom of Data ****************************
                  
 
-5. Also refer to **WTOPARM.jcl** for a sample JCL.
+6. Also refer to **WTOPARM.jcl** for a sample JCL.
 
-6. **WTOPARM.jpg** is the sample display of the MVS console when executing **WTOPARM** LMD. 
+7. **WTOPARM.jpg** is the sample display of the MVS console when executing **WTOPARM** LMD. 
 
-7. **RXWTO.asm** is the program to create a REXX function: **RXWTO**
+8. **RXWTO.asm** is the program to create a REXX function: **RXWTO**
 
-8. The descriptor code of **RXWTO.asm** is 11 which means the color of the message displayed will be in Red (use 'D MPF,C' to show your current settings or check '.MSGCOLR' definitions in your effective MPFLST PARMLIB member) and without the hold-on feature like that of **WTOPARM.asm**. Setting it as descriptor 11 will have no effect at all because the REXX environment will take away the privilege. 
+9. The descriptor code of **RXWTO.asm** is 11 which means the color of the message displayed will be in Red (use 'D MPF,C' to show your current settings or check '.MSGCOLR' definitions in your effective MPFLST PARMLIB member) and without the hold-on feature like that of **WTOPARM.asm**. Setting it as descriptor 11 will have no effect at all because the REXX environment will take away the privilege. 
 
-9. **RXWTO.rexx** shows how to invoke the **RXWTO** function in a REXX Exec.
+10. **RXWTO.rexx** shows how to invoke the **RXWTO** function in a REXX Exec.
  
-10. **RXWTO.jcl** shows a way to execute **RXWTO.rexx** where the last step with 'COND=EVEN' of a job can be used to display the results of running a job's steps on the MVS console.
+11. **RXWTO.jcl** shows a way to execute **RXWTO.rexx** where the last step with 'COND=EVEN' of a job can be used to display the results of running a job's steps on the MVS console.
 
-11. **RXWTO.jpg** shows the resulted MVS console image when running **RXWTO.jcl**
+12. **RXWTO.jpg** shows the resulted MVS console image when running **RXWTO.jcl**
 
-12. Also note that the LMD of **RXWTO** REXX function must be put into an LMD PDS that is in the link List concatenation or being added as a STEPLIB DD card in the JCL that invokes the REXX Exec. 
+13. Also note that the LMD of **RXWTO** REXX function must be put into an LMD PDS that is in the link List concatenation or being added as a STEPLIB DD card in the JCL that invokes the REXX Exec. 
