@@ -10,16 +10,17 @@ This repository demonstrates how to make use of the MVS provided API: WTO by cod
 
 4. Sample JCL for executing **WTOPARM LMD** is as follows: * Please note that WTOPARM LMD must be put into an APF library in the Link List concatenation -- using 'D PROG,APF' and 'D PROG,LNKLST' to ensure and 'F LLA,REFHRESH' to take effect * 
 
+
 	----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
 
 	***************************** Top of Data ******************************
 
-	//ANDREWJR  JOB  CLASS=A,NOTIFY=&SYSUID,MSGCLASS=X                      
-	//WTOPARM   EXEC PGM=WTOPARM,                                           
-	// PARM='01234567891123456789212345678931234567894123456789512345678961 
-	//             23456789712345678981234567899123456789' 
+	//ANDREWJR JOB CLASS=A,NOTIFY=&SYSUID,MSGCLASS=X
+	//WTOPARM EXEC PGM=WTOPARM,
+	// PARM='01234567891123456789212345678931234567894123456789512345678961 // 23456789712345678981234567899123456789'
+
+	**************************** Bottom of Data ****************************
                  
-	**************************** Bottom of Data **************************** 
 
 5. Also refer to **WTOPARM.jcl** for a sample JCL.
 
