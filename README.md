@@ -9,6 +9,7 @@ This repository demonstrates how to make use of the MVS provided API: WTO by cod
 3. The maximum length of the parameter that **WTOPARM.asm** can accept is 100. Leave the column 72 of the first line as blank and continue from the 16th column of the second line to specify the remaining argument to be displayed.
 
 4. Sample JCL for executing **WTOPARM LMD** is as follows: * Please note that WTOPARM LMD must be put into an APF library in the Link List concatenation -- using 'D PROG,APF' and 'D PROG,LNKLST' to ensure and 'F LLA,REFHRESH' to take effect * 
+
 	----+----1----+----2----+----3----+----4----+----5----+----6----+----7--
 	***************************** Top of Data ******************************
 	//ANDREWJR  JOB  CLASS=A,NOTIFY=&SYSUID,MSGCLASS=X                      
