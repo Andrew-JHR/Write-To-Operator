@@ -40,4 +40,4 @@ This repository demonstrates how to make use of the MVS provided API: WTO by cod
 
 12. **RXWTO.jpg** shows the resulted MVS console image when running **RXWTO.jcl**
 
-13. Also note that the LMD of **RXWTO** REXX function must be put into an LMD PDS that is in the link List concatenation or being added as a STEPLIB DD card in the JCL that invokes the REXX Exec. 
+13. Also note that the LMD of **RXWTO** REXX function must be put into an LMD PDS that is in the link List concatenation or be added as a STEPLIB DD card in the JCL that invokes the REXX Exec. 
